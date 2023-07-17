@@ -6,7 +6,7 @@
 import * as echarts from 'echarts';
 import { onMounted, ref } from 'vue';
 
-const chart = ref<HTMLElement | null>(null);
+const chart = ref()
 
 onMounted(() => {
   const inputDate = '2023-03-19';
