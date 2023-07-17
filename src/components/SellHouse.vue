@@ -2,7 +2,7 @@
   <div class="box" ref="chart"></div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import * as echarts from 'echarts';
 import { onMounted, ref } from 'vue';
 
@@ -11,7 +11,7 @@ const chart = ref()
 onMounted(() => {
   const inputDate = '2023-03-19';
   const result = calculateTimeDifference(inputDate);
-  var myChart = echarts.init(chart.value as HTMLElement);
+  var myChart = echarts.init(chart.value);
 
   const option = {
     title: {
