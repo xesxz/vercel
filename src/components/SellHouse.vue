@@ -11,7 +11,7 @@ const chart = ref<HTMLElement | null>(null);
 onMounted(() => {
   const inputDate = '2023-03-19';
   const result = calculateTimeDifference(inputDate);
-  var myChart = echarts.init(chart.value);
+  var myChart = echarts.init(chart.value as HTMLElement);
 
   const option = {
     title: {
